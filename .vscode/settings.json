@@ -1,0 +1,12 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "onFocusChange",
+  "explorer.compactFolders": true,
+  "prettier.singleQuote": true,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}
