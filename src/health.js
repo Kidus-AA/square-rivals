@@ -26,9 +26,10 @@ Health.prototype.update = function ({ players, ctx }) {
 };
 
 Health.prototype.handleCollision = function ({ player }) {
-  player.health += 10;
-  player.width += 10;
-  player.height += 10;
+  player.playerHealth = Math.max(0, player.playerHealth + 1);
+  player.width = Math.ceil(player.baseWidth * (player.playerHealth / 5));
+  player.height = Math.ceil(player.baseHeight * (player.playerHealth / 5));
+
   this.x = Math.random() * (this.game.width - this.width);
   this.y = Math.random() * (this.game.height - this.height);
 };
